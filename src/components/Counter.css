@@ -1,0 +1,18 @@
+:root {
+    padding-inline-start: 30%;
+}
+.main-content {
+    background-color: rgb(103, 149, 236);
+    width: 30vw;
+    height: 20vh;
+}
+h1 {
+    display: inline-block;
+    align-self: center;
+}
+button {
+    height: 5vh;
+    width: 5vw;
+    margin: 5% 15% 0 15%;
+
+}
