@@ -1,9 +1,11 @@
-import { createStore } from 'redux'
+import { createStore } from 'redux';
 import counterApp from './reducer/index';
 
+const enhancer = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+
 const store = () => createStore(
-    counterApp,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  counterApp,
+  enhancer,
 );
 
 export default store;
